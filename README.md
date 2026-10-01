@@ -109,46 +109,7 @@ points at youtube.com generally. To make it live:
    </div>
    ```
 
-   Get `YOUR_VIDEO_ID` from your video's YouTube URL — e.g. for
-   `youtube.com/watch?v=abc123XYZ`, the ID is `abc123XYZ`. No API key or YouTube
-   Data API setup needed for this — embeds are free and public by default as
-   long as the video itself isn't set to private.
+  
 
-2. **Point the button at your channel.** Search for `youtube-cta` in
-   `index.html` and change `href="https://www.youtube.com/"` to your channel
-   URL (e.g. `https://www.youtube.com/@yourchannel`).
 
-## Before you publish — replace these
 
-- **Your video embed and channel link** in the Watch section (see above).
-- **Email address** in the Contact section (`index.html`, search for `mailto:`).
-- **Instagram / social link** — currently a placeholder `#` link.
-- All sample photos and stories in `work.json`, and the project in `upcoming.json`.
-
-## Putting it online for free
-
-Same two options as before — pick whichever's easier for you:
-
-### Option A — Netlify Drop (fastest)
-1. Go to **netlify.com**, sign up free.
-2. From your dashboard, drag the whole `yashvardhan` folder onto the drop zone.
-3. You get a live link immediately — works for anyone, any time, for free.
-4. To update later: edit your files, then drag the folder onto your site's
-   **Deploys** tab again.
-
-### Option B — GitHub Pages
-1. Create a free account at **github.com**.
-2. Create a new repository and upload all the files in this folder (drag-and-drop
-   works fine on github.com, no command line needed).
-3. Go to **Settings → Pages**, set Source to your main branch, root folder. Save.
-4. Your live link appears within a minute: `https://yourusername.github.io/reponame/`.
-
-Both are 100% free, no time limit, no card required, and stay live permanently.
-
-## Customizing further
-
-- Colors, fonts, and spacing are all controlled from `css/style.css` — the
-  `:root` block at the top holds the base palette (the parts that stay
-  constant); `--accent` is the one that shifts per photo.
-- Fonts used: **Instrument Serif** (headlines/emphasis), **Space Grotesk**
-  (UI/body), **JetBrains Mono** (EXIF/metadata labels) — all free via Google Fonts.
